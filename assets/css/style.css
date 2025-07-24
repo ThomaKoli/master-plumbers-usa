@@ -332,3 +332,89 @@ a {
     font-size: 0.9rem;
     color: #B0B0B0;
 }
+
+/* =================================== */
+/*      RESPONSIVE DESIGN (MOBILE)     */
+/* =================================== */
+
+/* This media query targets all screens 768px wide or smaller (tablets and phones) */
+@media (max-width: 768px) {
+
+    /* --- General Adjustments --- */
+    body {
+        /* Make text slightly larger on mobile for readability */
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        /* Reduce headline size */
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        /* Reduce section title size */
+    }
+
+    section {
+        /* Reduce padding on sections to give content more room */
+        padding: 60px 15px;
+    }
+
+
+    /* --- Header & Navigation --- */
+    #main-header .container {
+        /* Allow header items to wrap onto the next line if needed */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* Center the logo and CTA on their own lines if they wrap */
+        height: auto;
+        /* Allow header height to grow */
+        padding: 15px 0;
+    }
+
+    #main-header nav {
+        /* Add some space around the navigation links */
+        margin: 15px 0;
+    }
+
+
+    /* --- Trust Bar --- */
+    #trust-bar .container {
+        /* Change flex direction to stack columns vertically */
+        flex-direction: column;
+        gap: 30px;
+        /* Add space between the stacked columns */
+    }
+
+
+    /* --- "Our Word" Section (About Us) --- */
+    .two-columns {
+        /* Stack the text and image columns vertically */
+        flex-direction: column;
+    }
+
+    #our-word h2 {
+        /* Re-center the headline for the stacked layout */
+        text-align: center;
+    }
+
+
+    /* --- Footer --- */
+    #main-footer .container {
+        /* Stack the footer columns vertically */
+        flex-direction: column;
+        text-align: center;
+        /* Center-align text for a cleaner mobile look */
+    }
+
+    #main-footer .footer-column {
+        /* Add space between each stacked footer column */
+        margin-bottom: 30px;
+    }
+
+    .social-icons {
+        /* Ensure social icons are centered within their column */
+        justify-content: center;
+    }
+}
